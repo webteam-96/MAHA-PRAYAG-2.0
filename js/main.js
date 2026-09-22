@@ -52,12 +52,14 @@
       thresholds = ts;
     }
   }
+  const schedule = $('#schedule');
   function sunFrame(rect) {
-    let p = (innerHeight - rect.top) / (innerHeight + rect.height);
-    p = Math.min(1, Math.max(0, (p - .15) / .7));
-    if (reduced) p = .5;
+    let p;
+    if (rail) { p = (innerHeight - rect.top) / (innerHeight + rect.height); p = Math.min(1, Math.max(0, (p - .15) / .7)); }
+    else { const s = schedule.getBoundingClientRect(); const travel = s.height - innerHeight; p = travel > 0 ? Math.min(1, Math.max(0, -s.top / travel)) : 1; }
+    if (reduced) p = 1;
     // snap to the nearest marker: the sun hops dot to dot as you scroll
-    const n = items.length, step = Math.min(n - 1, Math.floor(p * n));
+    const n = items.length, step = rail ? Math.min(n - 1, Math.floor(p * n)) : Math.round(p * (n - 1));
     const li = items[step];
     let x = 0, y = 0, fx = 0;
     if (rail) { y = li.getBoundingClientRect().top + 15 - rect.top; fx = thresholds[step]; }
