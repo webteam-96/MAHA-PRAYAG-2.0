@@ -254,7 +254,7 @@ Rules: no horizontal scroll at any width, fixed at the source (the seam, the arc
 |---|---|---|
 | Speaker names, photos, bios | Four "To be announced" template cards | Editing the card markup |
 | Event photographs | Three lattice tiles "Maha Prayag 1.0 highlights, coming soon" | Dropping images into the tiles |
-| Registration / sponsorship links | "Link coming soon" dialogs | Setting `data-register-url` / `data-sponsor-url` |
+| Registration / sponsorship links | Live: kaizenevents.live registration and sponsorship forms | Set via `data-register-url` / `data-sponsor-url` |
 | Sponsor benefits and CCT artwork | Outlined slots | Adding the images |
 | Contact phone / email | "Contact your chapter Treasurer" | Filling the `data-contact` slot |
 | Devanagari motto spelling | संघे शक्तिः कलौ युगे | Organiser confirmation |

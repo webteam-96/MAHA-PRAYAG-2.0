@@ -313,7 +313,7 @@ address{font-style:normal;margin:0 0 12px;color:var(--ink-soft);line-height:1.55
 .dlg-close{position:absolute;top:12px;right:12px;width:44px;height:44px;border:0;border-radius:50%;background:transparent;color:var(--ink);cursor:pointer;display:grid;place-items:center}
 .dlg-close:hover{background:var(--ivory-2)}
 .dlg-close svg{width:22px;height:22px}
-.dlg-actions{margin:20px 0 0}
+.dlg-actions{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0 0}
 .dlg :focus-visible{outline-color:var(--vermilion)}
 
 /* reveals */
