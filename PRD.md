@@ -29,7 +29,7 @@
 |---|---|---|
 | BBB chapter members across Maharashtra (business owners, professionals) | Date, venue, fee, agenda, how to register, deadline | 70 %+ mobile; link arrives on WhatsApp |
 | Prospective sponsors and exhibitors | Tier prices, slots, lucky-draw rules, deadline | Mobile and desktop |
-| Chapter coordinators | One authoritative link with everything, easy to forward | Desktop |
+| Chapter Treasurers | One authoritative link with everything, easy to forward | Desktop |
 | Guests and first-time attendees | What the event is, who is behind it, why attend | Mobile |
 
 Design implications: mobile-first hierarchy, thumb-reachable CTAs, a persistent register affordance on phones, share-ready Open Graph card, copy that scans in headings and numbers.
@@ -145,7 +145,7 @@ Single page, anchor-linked. Content per section is fixed; layouts below are the 
 
 ### 4.10 Contact and footer (`#contact`) — ember
 - Closing line in Fraunces at display size: "See you at Maha Prayag." with the emblem above it.
-- Footer columns: organiser ("The Forum of Business By Brahmins — Trust®"), event line ("Mahaa Business Conclave · 24th October 2026 · Ghatkopar East, Mumbai"), anchor nav, and "For queries, contact your chapter coordinator." No phone or email is published by the reference and none is invented; a `data-contact` slot is left for one.
+- Footer columns: organiser ("The Forum of Business By Brahmins — Trust®"), event line ("Mahaa Business Conclave · 24th October 2026 · Ghatkopar East, Mumbai"), anchor nav, and "For queries, contact your chapter Treasurer." No phone or email is published by the reference and none is invented; a `data-contact` slot is left for one.
 - Bottom: motto in small caps · © 2026 BBB Trust.
 
 ## 5. Functionality
@@ -256,7 +256,7 @@ Rules: no horizontal scroll at any width, fixed at the source (the seam, the arc
 | Event photographs | Three lattice tiles "Maha Prayag 1.0 highlights, coming soon" | Dropping images into the tiles |
 | Registration / sponsorship links | "Link coming soon" dialogs | Setting `data-register-url` / `data-sponsor-url` |
 | Sponsor benefits and CCT artwork | Outlined slots | Adding the images |
-| Contact phone / email | "Contact your chapter coordinator" | Filling the `data-contact` slot |
+| Contact phone / email | "Contact your chapter Treasurer" | Filling the `data-contact` slot |
 | Devanagari motto spelling | संघे शक्तिः कलौ युगे | Organiser confirmation |
 | Marathi / Hindi copy | Not included | Future phase |
 
