@@ -207,7 +207,7 @@ body.menu-open{overflow:hidden}
 /* schedule — sun path */
 .sunpath{position:relative;margin:94px 70px 0;aspect-ratio:1200/420}
 .arc{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
-.sun{position:absolute;left:0;top:0;width:64px;height:64px;margin:-32px 0 0 -32px;z-index:2;will-change:transform;filter:drop-shadow(0 0 18px rgba(250,175,18,.6))}
+.sun{position:absolute;left:0;top:0;width:64px;height:64px;margin:-32px 0 0 -32px;z-index:2;will-change:transform;transition:transform .55s var(--ease);filter:drop-shadow(0 0 18px rgba(250,175,18,.6))}
 .sun svg{display:block;width:100%;height:100%}
 .agenda{list-style:none;margin:0;padding:0}
 .agenda li{position:absolute;left:calc(var(--t)*100%);top:calc((340 - 1040*var(--t) + 1040*var(--t)*var(--t))/420*100%);width:150px;margin-left:-75px;padding-top:44px;text-align:center}
@@ -321,8 +321,8 @@ address{font-style:normal;margin:0 0 12px;color:var(--ink-soft);line-height:1.55
 .reveal.sweep.in{clip-path:inset(-40% -12% -12% -12%)}
 .reveal.sweep .agenda li{opacity:0;transition:opacity .6s var(--ease) calc(.25s + var(--i,0)*.16s)}
 .reveal.sweep.in .agenda li{opacity:1}
-.reveal.sweep .sun{opacity:0;transition:opacity .6s var(--ease) .3s}
-.reveal.sweep.in .sun{opacity:1}
+.reveal.sweep .sun{opacity:0;transition:opacity .6s var(--ease) .3s,transform .55s var(--ease)}
+.reveal.sweep.in .sun{opacity:1;transition:opacity .6s var(--ease) .3s,transform .55s var(--ease)}
 .reveal.mask .l{display:block;overflow:hidden;padding:.1em .12em .24em 0;margin:-.1em -.12em -.24em 0}
 .reveal.mask .w{display:block;transform:translateY(135%);transition:transform .9s var(--ease) var(--d,0s)}
 .reveal.mask.in .w{transform:none}
@@ -356,7 +356,8 @@ address{font-style:normal;margin:0 0 12px;color:var(--ink-soft);line-height:1.55
   .hero-ember{left:0;right:50%}
   .hero-hanuman{height:auto;width:min(96%,58vh)}
   .hero-text{margin-left:calc(50% + 32px);max-width:none}
-  .agenda li{width:120px;margin-left:-60px}
+  .agenda li{width:112px;margin-left:-56px}
+  .agenda time{font-size:1rem}
   .agenda time{font-size:1rem}
   .agenda time{font-size:.9rem}
   .speakers{grid-template-columns:1fr 1fr}

@@ -56,10 +56,14 @@
     let p = (innerHeight - rect.top) / (innerHeight + rect.height);
     p = Math.min(1, Math.max(0, (p - .15) / .7));
     if (reduced) p = .5;
-    let x = 0, y = p * H, fx = p;
-    if (!rail) { const pt = pts[Math.round(p * 100)]; x = pt[0] * W; y = pt[1] * H; fx = pt[0]; }
+    // snap to the nearest marker: the sun hops dot to dot as you scroll
+    const n = items.length, step = Math.min(n - 1, Math.floor(p * n));
+    const li = items[step];
+    let x = 0, y = 0, fx = 0;
+    if (rail) { y = li.getBoundingClientRect().top + 15 - rect.top; fx = thresholds[step]; }
+    else { const t = ts[step]; const k = pts.reduce((b, q, i) => Math.abs(q[0] - t) < Math.abs(pts[b][0] - t) ? i : b, 0); x = pts[k][0] * W; y = pts[k][1] * H; fx = t; }
     sun.style.transform = 'translate3d(' + x.toFixed(1) + 'px,' + y.toFixed(1) + 'px,0)';
-    items.forEach((li, i) => li.classList.toggle('is-past', thresholds[i] <= fx + .002));
+    items.forEach((el, i) => el.classList.toggle('is-past', i <= step));
   }
 
   /* ---------- one rAF for all scroll work ---------- */
