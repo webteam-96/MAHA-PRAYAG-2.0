@@ -123,7 +123,7 @@ Single page, anchor-linked. Content per section is fixed; layouts below are the 
   - STALL · Showcase your business on-site · ₹3,000 · 3 per chapter
 - "How the lucky draw works" as three numbered steps: 1 Share your Name, Mobile Number, Chapter and Sponsorship Type · 2 Entries close 30th September 2026 · 3 Winners drawn; stalls go to lucky-draw winners and the Platinum Sponsor. Note line: "All sponsors are selected by lucky draw."
 - CTA "Enter the lucky draw" → sponsorship dialog (§5).
-- Bordered slot "Sponsor benefits artwork to follow" kept, styled as a ticket-stub outline, not a dashed box.
+- Sponsor benefits comparison table (Platinum UNO / Gold / Stall Owners) beside the lucky-draw steps; each ticket also lists its own benefits.
 
 ### 4.7 Registration (`#register`) — ember section
 - The page's second dark moment: ember background, smoke drift, `hanuman-glow.webp` faint at the far right edge.
