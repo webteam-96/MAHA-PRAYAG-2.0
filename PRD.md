@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Event** | Maha Prayag 2.0 — Maharashtra Regional Conclave |
+| **Event** | Maha Prayag 2.0 — Mahaa Business Conclave |
 | **Organiser** | The Forum of Business By Brahmins — Trust® (BBB Trust) |
 | **Date & time** | Saturday, 24 October 2026 · 2 PM – 10 PM · registration from 1 PM · lamp lighting 2:15 PM |
 | **Venue** | Lavender Bough, 90 Feet Road, next to BAPS Swaminarayan Sanskar Kendra, Garodia Nagar, Ghatkopar East, Mumbai |
@@ -78,7 +78,7 @@ Scale (fluid): H1 `clamp(3.6rem, 9vw, 9rem)`, leading 0.9 · section H2 `clamp(2
 
 ### 3.4 Copy (fixed strings)
 
-- Name: **MAHA PRAYAG 2.0** · Subtitle: **Maharashtra Regional Conclave**
+- Name: **MAHA PRAYAG 2.0** · Subtitle: **Mahaa Business Conclave**
 - Tagline: *The ultimate confluence of minds, networks and growth.*
 - Motto: **Sanghe Shaktihi Kalau Yuge — Together in strength, together in growth.**
 - Organiser line: The Forum of Business by Brahmins — Trust
@@ -94,7 +94,7 @@ Single page, anchor-linked. Content per section is fixed; layouts below are the 
 
 ### 4.2 Hero — "The Seam"
 - **Split composition**: left ~55 % ivory, right ~45 % ember. The lotus emblem sits on the seam, overlapping both, at `min(420px, 34vw)` wide.
-- **Ivory side (text):** overline "The Forum of Business by Brahmins — Trust" · H1 "MAHA PRAYAG" with "2.0" set as a huge italic Fraunces numeral in vermilion, offset below-right · subtitle "Maharashtra Regional Conclave" · tagline in italic · two CTAs: "Register for the Event" (vermilion pill) and "Sponsor & Exhibit" (ink outline pill) · below them a **vertical details rail**: WHEN 24 Oct 2026, Saturday · TIME 2 PM – 10 PM, registration from 1 PM · WHERE Lavender Bough, Ghatkopar East, Mumbai.
+- **Ivory side (text):** overline "The Forum of Business by Brahmins — Trust" · H1 "MAHA PRAYAG" with "2.0" set as a huge italic Fraunces numeral in vermilion, offset below-right · subtitle "Mahaa Business Conclave" · tagline in italic · two CTAs: "Register for the Event" (vermilion pill) and "Sponsor & Exhibit" (ink outline pill) · below them a **vertical details rail**: WHEN 24 Oct 2026, Saturday · TIME 2 PM – 10 PM, registration from 1 PM · WHERE Lavender Bough, Ghatkopar East, Mumbai.
 - **Ember side (art):** `hanuman-glow.webp` anchored bottom, ~85 % of panel height, two smoke layers drifting slowly behind, a vermilion radial glow. A small live countdown to 24 Oct 2026 14:00 IST sits at the panel's top ("33 days · 07 hrs · 12 min"); reads "Today" on the day, hidden after.
 - **Phone (< 600 px):** the ember panel becomes a 46 vh top band (emblem centred, Hanuman at reduced scale on the right, countdown in the band's corner); the ivory text block follows with the H1 at 3.6 rem, CTAs full-width, details rail as a compact 3-row list. Art never sits behind text.
 
@@ -145,7 +145,7 @@ Single page, anchor-linked. Content per section is fixed; layouts below are the 
 
 ### 4.10 Contact and footer (`#contact`) — ember
 - Closing line in Fraunces at display size: "See you at Maha Prayag." with the emblem above it.
-- Footer columns: organiser ("The Forum of Business By Brahmins — Trust®"), event line ("Maharashtra Regional Conclave · 24th October 2026 · Ghatkopar East, Mumbai"), anchor nav, and "For queries, contact your chapter coordinator." No phone or email is published by the reference and none is invented; a `data-contact` slot is left for one.
+- Footer columns: organiser ("The Forum of Business By Brahmins — Trust®"), event line ("Mahaa Business Conclave · 24th October 2026 · Ghatkopar East, Mumbai"), anchor nav, and "For queries, contact your chapter coordinator." No phone or email is published by the reference and none is invented; a `data-contact` slot is left for one.
 - Bottom: motto in small caps · © 2026 BBB Trust.
 
 ## 5. Functionality
@@ -242,7 +242,7 @@ Rules: no horizontal scroll at any width, fixed at the source (the seam, the arc
 
 - **Stack:** `index.html`, `css/styles.css`, `js/main.js`, `assets/`. Vanilla HTML5 / CSS3 / ES2020. No build, no dependencies, no CDN scripts. Google Fonts is the only external stylesheet; the map iframe is the only other third-party request.
 - **Performance budget:** total transfer ≤ 750 KB (fonts ≈ 140 KB, images ≈ 330 KB); hero emblem and Hanuman preloaded; below-fold images lazy; CSS ≤ 45 KB; JS ≤ 14 KB; no inline base64 images larger than 2 KB (grain SVG only).
-- **SEO / sharing:** title "Maha Prayag 2.0 | Maharashtra Regional Conclave · 24 Oct 2026, Mumbai"; meta description; Open Graph and Twitter tags with a 1200×630 `assets/og.jpg` composed in the ivory-and-ember style; `Event` JSON-LD (name, startDate, endDate, location with address, offers ₹1,699 INR, organizer).
+- **SEO / sharing:** title "Maha Prayag 2.0 | Mahaa Business Conclave · 24 Oct 2026, Mumbai"; meta description; Open Graph and Twitter tags with a 1200×630 `assets/og.jpg` composed in the ivory-and-ember style; `Event` JSON-LD (name, startDate, endDate, location with address, offers ₹1,699 INR, organizer).
 - **Browser support:** last 2 versions of Chrome, Safari, Firefox, Edge; iOS 15+; Android Chrome. `offset-path` has a JS fallback for the sun; `<dialog>` is native in all targets.
 - **No-JS:** all content visible, anchors work, dialogs become inline notes, countdowns show static dates.
 - **Hosting:** any static host; relative paths only.
