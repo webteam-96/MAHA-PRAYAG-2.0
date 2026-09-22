@@ -97,6 +97,7 @@ body.menu-open{overflow:hidden}
 /* layout */
 .wrap{position:relative;max-width:1320px;margin:0 auto;padding:0 var(--gutter)}
 .sec{position:relative;padding:var(--gap) 0}
+[hidden]{display:none!important}
 .sec-alt{background:rgba(255,255,255,.025);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .sec-label{margin:0 0 20px;font:700 .875rem/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
 

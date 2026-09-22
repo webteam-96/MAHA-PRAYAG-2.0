@@ -23,7 +23,7 @@
 <link rel="preload" as="image" href="assets/logo-full.webp">
 <link rel="preload" as="image" imagesrcset="assets/hanuman-glow-sm.webp 510w, assets/hanuman-glow.webp 1020w" imagesizes="(max-width: 599px) 50vw, (max-width: 899px) 44vw, 40vw">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,WONK@0,9..144,300..700,0;0,9..144,300..700,1;1,9..144,300..700,0;1,9..144,300..700,1&family=DM+Sans:wght@400;500;700&family=Tiro+Devanagari+Sanskrit&display=swap">
-<link rel="stylesheet" href="css/styles.css?v=79">
+<link rel="stylesheet" href="css/styles.css?v=80">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Event","name":"Maha Prayag 2.0 — Mahaa Business Conclave","description":"The Mahaa Business Conclave of The Forum of Business By Brahmins — Trust. Speaker sessions, KYT Conclave, high tea and networking, awards and entertainment, dinner.","startDate":"2026-10-24T14:00:00+05:30","endDate":"2026-10-24T22:00:00+05:30","eventStatus":"https://schema.org/EventScheduled","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","image":"assets/og.jpg","location":{"@type":"Place","name":"Lavender Bough","address":{"@type":"PostalAddress","streetAddress":"90 Feet Road, next to BAPS Swaminarayan Sanskar Kendra, Garodia Nagar","addressLocality":"Ghatkopar East, Mumbai","addressRegion":"Maharashtra","addressCountry":"IN"}},"offers":{"@type":"Offer","name":"Delegate Pass","price":"1699","priceCurrency":"INR","availability":"https://schema.org/InStock","validThrough":"2026-10-10T23:59:59+05:30"},"organizer":{"@type":"Organization","name":"The Forum of Business By Brahmins — Trust"}}
 </script>
@@ -52,7 +52,7 @@
     <nav class="nav" aria-label="Primary">
       <ul>
         <li><a href="#highlights">Highlights</a></li>
-        <li><a href="#speakers">Speakers</a></li>
+        <li data-nav="speakers" hidden><a href="#speakers">Speakers</a></li>
         <li><a href="#schedule">Schedule</a></li>
         <li><a href="#sponsorship">Sponsorship</a></li>
         <li><a href="#register">Register</a></li>
@@ -69,7 +69,7 @@
   <nav aria-label="Menu">
     <ul>
       <li><a href="#highlights">Highlights</a></li>
-      <li><a href="#speakers">Speakers</a></li>
+      <li data-nav="speakers" hidden><a href="#speakers">Speakers</a></li>
       <li><a href="#schedule">Schedule</a></li>
       <li><a href="#sponsorship">Sponsorship</a></li>
       <li><a href="#register">Register</a></li>
@@ -132,7 +132,8 @@
 </section>
 
 <!-- 02 SPEAKERS -->
-<section class="sec sec-alt" id="speakers" aria-labelledby="speakers-title">
+<!-- Speakers section: hidden for now. To restore: remove `hidden` here, remove `hidden` from the three <li data-nav="speakers">, and renumber the section labels (Speakers becomes 02). -->
+<section class="sec sec-alt" id="speakers" aria-labelledby="speakers-title" hidden>
   <img class="watermark" src="assets/logo.webp" width="1200" height="431" alt="" loading="lazy" aria-hidden="true">
   <div class="wrap">
     <p class="sec-label reveal fade"><span>02 — Speakers &amp; Guests</span></p>
@@ -151,7 +152,7 @@
 <section class="sec sec-pin" id="schedule" aria-labelledby="schedule-title">
   <div class="pin-stage">
   <div class="wrap">
-    <p class="sec-label reveal fade"><span>03 — Schedule</span></p>
+    <p class="sec-label reveal fade"><span>02 — Schedule</span></p>
     <h2 class="h2 reveal mask" id="schedule-title"><span class="l"><span class="w">The Day Unfolds</span></span></h2>
     <p class="lead reveal rise">From lamp lighting to dinner: an evening of ideas, connection and celebration.</p>
     <div class="sunpath reveal sweep" id="sunpath">
@@ -174,7 +175,7 @@
 <!-- 04 SPONSORSHIP -->
 <section class="sec" id="sponsorship" aria-labelledby="sponsorship-title">
   <div class="wrap">
-    <p class="sec-label reveal fade"><span>04 — Sponsorship</span></p>
+    <p class="sec-label reveal fade"><span>03 — Sponsorship</span></p>
     <h2 class="h2 reveal mask" id="sponsorship-title"><span class="l"><span class="w">Be Part of the Conclave</span></span></h2>
     <p class="lead reveal rise">Limited slots across three tiers, winners chosen by lucky draw.</p>
   </div>
@@ -240,7 +241,7 @@
 <section class="sec sec-ember" id="register" aria-labelledby="register-title">
   <div class="smoke-wrap" aria-hidden="true"><div class="smoke smoke-a"></div><div class="smoke smoke-b"></div></div>
   <div class="wrap">
-    <p class="sec-label reveal fade"><span>05 — Register</span></p>
+    <p class="sec-label reveal fade"><span>04 — Register</span></p>
     <h2 class="h2 reveal mask" id="register-title"><span class="l"><span class="w">Reserve Your Seat</span></span></h2>
     <p class="lead reveal rise">Two ways to be part of Maha Prayag: as a delegate, or as a sponsor.</p>
 
@@ -291,7 +292,7 @@
 <!-- 06 VENUE -->
 <section class="sec sec-alt sec-venue" id="venue" aria-labelledby="venue-title">
   <div class="wrap">
-    <p class="sec-label reveal fade"><span>06 — Venue</span></p>
+    <p class="sec-label reveal fade"><span>05 — Venue</span></p>
     <h2 class="h2 reveal mask" id="venue-title"><span class="l"><span class="w">Where We Gather</span></span></h2>
   </div>
   <div class="venue-map reveal rise">
@@ -325,7 +326,7 @@
         <p class="overline">On this page</p>
         <ul class="foot-nav">
           <li><a href="#highlights">Highlights</a></li>
-          <li><a href="#speakers">Speakers</a></li>
+          <li data-nav="speakers" hidden><a href="#speakers">Speakers</a></li>
           <li><a href="#schedule">Schedule</a></li>
           <li><a href="#sponsorship">Sponsorship</a></li>
           <li><a href="#register">Register</a></li>
@@ -363,7 +364,7 @@
   <p class="dlg-actions"><button class="btn btn-outline" type="button" data-close>Close</button></p>
 </dialog>
 
-<script src="js/main.js?v=11" defer></script>
+<script src="js/main.js?v=12" defer></script>
 <script src="js/smoke.js?v=2" defer></script>
 </body>
 </html>

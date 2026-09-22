@@ -9,8 +9,10 @@
   const fine = matchMedia('(hover: hover) and (pointer: fine)').matches;
 
   /* ---------- elements ---------- */
-  const head = $('.site-head'), navLinks = $$('.nav a');
-  const sections = navLinks.map(a => $(a.hash)).filter(Boolean);
+  const head = $('.site-head');
+  // skip nav items whose section is hidden
+  const navLinks = $$('.nav a').filter(a => { const s = $(a.hash); return s && !s.hidden; });
+  const sections = navLinks.map(a => $(a.hash));
   const hero = $('.hero'), reg = $('#register'), foot = $('footer');
   const sticky = $('.sticky-cta');
   const sunpath = $('#sunpath'), sun = $('#sun'), arc = $('.arc'), path = $('#arc-path');
