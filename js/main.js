@@ -111,7 +111,7 @@
   const dayKey = t => Math.floor((t + IST) / DAY);
   const pad = n => String(n).padStart(2, '0');
   const count = $('#event-count'), row = $('.count-row', count);
-  const num = { d: $('[data-u=d]', count), h: $('[data-u=h]', count), m: $('[data-u=m]', count) };
+  const num = { d: $('[data-u=d]', count), h: $('[data-u=h]', count), m: $('[data-u=m]', count), s: $('[data-u=s]', count) };
   function setNum(el, v) {
     if (el.textContent === v) return;
     el.textContent = v;
@@ -130,6 +130,7 @@
       setNum(num.d, String(Math.floor(diff / DAY)));
       setNum(num.h, pad(Math.floor(diff / 36e5) % 24));
       setNum(num.m, pad(Math.floor(diff / 6e4) % 60));
+      setNum(num.s, pad(Math.floor(diff / 1e3) % 60));
       count.hidden = false;
     } else if (dayKey(now) === dayKey(EVENT)) { row.textContent = 'Today'; count.hidden = false; }
     else count.hidden = true;

@@ -20,9 +20,10 @@
 <meta name="twitter:image" content="assets/og.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="assets/logo-full.webp">
 <link rel="preload" as="image" imagesrcset="assets/hanuman-glow-sm.webp 510w, assets/hanuman-glow.webp 1020w" imagesizes="(max-width: 599px) 50vw, (max-width: 899px) 44vw, 40vw">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,WONK@0,9..144,300..700,0;0,9..144,300..700,1;1,9..144,300..700,0;1,9..144,300..700,1&family=DM+Sans:wght@400;500;700&family=Tiro+Devanagari+Sanskrit&display=swap">
-<link rel="stylesheet" href="css/styles.css?v=39">
+<link rel="stylesheet" href="css/styles.css?v=42">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Event","name":"Maha Prayag 2.0 — Mahaa Business Conclave","description":"The Mahaa Business Conclave of The Forum of Business By Brahmins — Trust. Speaker sessions, KYT Conclave, high tea and networking, awards and entertainment, dinner.","startDate":"2026-10-24T14:00:00+05:30","endDate":"2026-10-24T22:00:00+05:30","eventStatus":"https://schema.org/EventScheduled","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","image":"assets/og.jpg","location":{"@type":"Place","name":"Lavender Bough","address":{"@type":"PostalAddress","streetAddress":"90 Feet Road, next to BAPS Swaminarayan Sanskar Kendra, Garodia Nagar","addressLocality":"Ghatkopar East, Mumbai","addressRegion":"Maharashtra","addressCountry":"IN"}},"offers":{"@type":"Offer","name":"Delegate Pass","price":"1699","priceCurrency":"INR","availability":"https://schema.org/InStock","validThrough":"2026-10-10T23:59:59+05:30"},"organizer":{"@type":"Organization","name":"The Forum of Business By Brahmins — Trust"}}
 </script>
@@ -47,7 +48,6 @@
   <div class="bar">
     <a class="brand" href="#top" data-cta="brand-top">
       <img src="assets/logo-full-sm.webp" srcset="assets/logo-full-sm.webp 600w, assets/logo-full.webp 1200w" sizes="(max-width: 599px) 150px, 200px" width="600" height="210" alt="Maha Prayag 2.0 — The ultimate confluence of minds, networks and growth.">
-      <img class="bbb" src="assets/logo-bbb.webp" width="88" height="88" alt="BBB Trust — The Forum of Business by Brahmins">
     </a>
     <nav class="nav" aria-label="Primary">
       <ul>
@@ -59,6 +59,7 @@
         <li><a href="#venue">Venue</a></li>
       </ul>
     </nav>
+    <img class="bbb" src="assets/logo-bbb.webp" width="88" height="88" alt="BBB Trust — The Forum of Business by Brahmins">
     <a class="btn btn-primary btn-sm head-cta" href="#register" data-cta="nav-register">Register</a>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><span class="bars" aria-hidden="true"></span></button>
   </div>
@@ -90,13 +91,8 @@
   <div class="wrap hero-wrap">
     <div class="hero-text">
       <p class="overline reveal rise" style="--d:.1s">The Forum of Business by Brahmins — Trust</p>
-      <h1 class="h1 reveal mask" id="hero-title">
-        <span class="l"><span class="w" style="--d:.15s">MAHA</span></span>
-        <span class="l"><span class="w" style="--d:.27s">PRAYAG</span></span>
-        <span class="l l-two"><span class="w" style="--d:.39s"><em>2.0</em></span></span>
-      </h1>
+      <h1 class="hero-logo reveal rise" id="hero-title" style="--d:.15s"><img src="assets/logo-full.webp" width="1200" height="420" alt="Maha Prayag 2.0 — The ultimate confluence of minds, networks and growth." fetchpriority="high"></h1>
       <p class="hero-sub reveal rise" style="--d:.55s">Mahaa Business Conclave</p>
-      <p class="hero-tag reveal rise" style="--d:.64s">The ultimate confluence of minds, networks and growth.</p>
       <div class="hero-ctas reveal rise" style="--d:.73s">
         <a class="btn btn-primary" href="#register" data-cta="hero-register">Register for the Event</a>
         <a class="btn btn-outline" href="#sponsorship" data-cta="hero-sponsor">Sponsor &amp; Exhibit</a>
@@ -108,7 +104,7 @@
       </dl>
       <div class="hero-count" id="event-count" hidden>
       <span class="overline">Countdown to 24 Oct</span>
-      <span class="count-row"><span class="num" data-u="d">33</span> days · <span class="num" data-u="h">07</span> hrs · <span class="num" data-u="m">12</span> min</span>
+      <span class="count-row"><span class="num" data-u="d">33</span> days · <span class="num" data-u="h">07</span> hrs · <span class="num" data-u="m">12</span> min · <span class="num" data-u="s">00</span> sec</span>
       </div>
     </div>
   </div>
@@ -370,7 +366,7 @@
   <p class="dlg-actions"><button class="btn btn-outline" type="button" data-close>Close</button></p>
 </dialog>
 
-<script src="js/main.js?v=5" defer></script>
+<script src="js/main.js?v=6" defer></script>
 <script src="js/smoke.js?v=2" defer></script>
 </body>
 </html>
