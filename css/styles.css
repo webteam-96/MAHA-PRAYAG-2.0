@@ -252,8 +252,10 @@ body.menu-open{overflow:hidden}
 .sec-ember .sec-label{color:var(--gold-l)}
 .sec-ember .agenda time{color:var(--cream)}
 .sec-ember .wrap{position:relative;z-index:1}
-.reg-stage{display:flex;flex-direction:column;align-items:center;margin-top:48px}
-.reg-hanuman{display:none;width:min(100%,520px);height:auto;margin:0 auto;position:relative;z-index:1;transform:translateY(4.8%);pointer-events:none;filter:drop-shadow(0 0 40px rgba(183,38,26,.35))}
+.reg-stage{display:flex;flex-direction:column;align-items:center;margin-top:56px}
+@media (max-width:1199px){.reg-hanuman{width:min(72%,380px)}}
+@media (max-width:599px){.reg-hanuman{width:78%}}
+.reg-hanuman{display:block;width:min(100%,520px);height:auto;margin:0 auto;position:relative;z-index:1;transform:translateY(4.8%);pointer-events:none;filter:drop-shadow(0 0 40px rgba(183,38,26,.35))}
 .reg-base{position:relative;width:100%;padding:0;border-radius:6px 6px 22px 22px;background:linear-gradient(180deg,#160505 0%,var(--black) 38%);border:1px solid var(--line-e);border-top:3px solid var(--gold);box-shadow:0 30px 80px -30px rgba(0,0,0,.9),inset 0 12px 24px -16px rgba(228,184,92,.35)}
 .deadlines{display:flex;flex-wrap:wrap;gap:10px 32px;margin:0 0 36px;padding:14px 26px;border:1px solid var(--line-e);border-radius:999px;width:fit-content;max-width:100%;background:rgba(42,11,11,.6)}
 .deadlines p{margin:0;display:flex;align-items:center;gap:10px;font-size:.95rem}
@@ -356,7 +358,6 @@ address{font-style:normal;margin:0 0 12px;color:var(--ink-soft);line-height:1.55
   #register .wrap>*{grid-column:2}
   #register .wrap>.sec-label{grid-column:auto;grid-row:auto}
   #register .wrap>.reg-stage{grid-column:1;grid-row:1/span 5;align-self:end;margin-top:0;margin-bottom:-12px}
-  #register .reg-hanuman{display:block}
   #register .passes{grid-template-columns:1fr 1fr;max-width:none}
   #register .pass .amount{font-size:2.3rem}
   #register .pass-price{white-space:nowrap}
