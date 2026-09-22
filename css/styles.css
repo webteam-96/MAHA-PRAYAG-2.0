@@ -408,7 +408,7 @@ address{font-style:normal;margin:0 0 12px;color:var(--ink-soft);line-height:1.55
   .passes{grid-template-columns:1fr}
   .venue-map{height:auto}
   .map{position:relative;display:block;height:380px}
-  .venue-card{position:relative;left:auto;top:auto;transform:none;width:auto;margin:-40px var(--gutter) 0}
+  .venue-card{position:relative;left:auto;right:auto;top:auto;transform:none;width:auto;margin:-40px var(--gutter) 0}
   .sec-venue{padding-bottom:var(--gap)}
 }
 
@@ -455,7 +455,9 @@ address{font-style:normal;margin:0 0 12px;color:var(--ink-soft);line-height:1.55
   .pass-head,.pass-body{padding-left:22px;padding-right:22px}
   .pass .btn{width:100%}
   .map{height:280px}
-  .venue-card{margin:-24px var(--gutter) 0;padding:24px 20px}
+  .venue-card{margin:-24px var(--gutter) 0;padding:28px 20px;text-align:center}
+  .venue-card .overline,.venue-card address,.venue-card .venue-when{margin-left:auto;margin-right:auto}
+  .venue-card address{max-width:30ch}
   .venue-card .btn{width:100%}
   .foot-cols{grid-template-columns:1fr;gap:26px}
   .foot-close{margin-bottom:48px}
