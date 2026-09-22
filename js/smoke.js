@@ -8,7 +8,7 @@
 
   var OPTS = {
     base: '#1C0404', mid: '#8A1212', hi: '#E8482E',   // shadow, body and lit edge of the smoke
-    speed: 0.045, scale: 1.6, opacity: 0.9, grain: 0.04, parallax: 0.12,
+    speed: 0.045, scale: 1.6, opacity: 1.0, grain: 0.04, parallax: 0.12,
     octaves: innerWidth < 900 ? 5 : 6
   };
 
