@@ -149,12 +149,7 @@ body.menu-open{overflow:hidden}
 .barcode{height:38px;margin:0 auto 10px;max-width:180px;background:repeating-linear-gradient(90deg,var(--gold) 0 2px,transparent 2px 5px,var(--gold) 5px 6px,transparent 6px 11px,var(--gold) 11px 14px,transparent 14px 17px,var(--gold) 17px 18px,transparent 18px 22px);opacity:.8}
 .admit{margin:0;font-variant:small-caps;letter-spacing:.16em;font-weight:500;color:var(--ink-soft)}
 .tiers{display:grid;gap:36px}
-.ticket-tier .ticket-body{display:flex;flex-direction:column;justify-content:center;gap:10px;padding:32px 44px}
-.perks{list-style:none;margin:8px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 24px}
-.perks li{position:relative;padding-left:22px;font-size:.92rem;line-height:1.45;color:var(--ink-soft)}
-.perks li::before{content:"";position:absolute;left:0;top:.45em;width:13px;height:13px;background:var(--gold);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M4 12.5l5 5L20 6.5' fill='none' stroke='%23000' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/100% no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M4 12.5l5 5L20 6.5' fill='none' stroke='%23000' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/100% no-repeat}
-.ticket-platinum .perks li{color:rgba(243,231,214,.9)}
-.ticket-platinum .perks li::before{background:var(--gold-l)}
+.ticket-tier .ticket-body{display:flex;flex-direction:column;justify-content:center;gap:10px;padding:36px 44px}
 .ticket-platinum{background:var(--grain),var(--vermilion);color:var(--cream)}
 .ticket-platinum .ticket-body{position:relative;overflow:hidden}
 .ticket-platinum .ticket-body::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,transparent 35%,rgba(228,184,92,.4) 50%,transparent 65%);transform:translateX(-100%);pointer-events:none}
@@ -445,7 +440,6 @@ address{font-style:normal;margin:0 0 12px;color:var(--ink-soft);line-height:1.55
   .smoke{opacity:.2}.smoke-b{opacity:.16}
   .sec{padding:var(--gap) 0}
   .ticket-body,.ticket-tier .ticket-body{grid-template-columns:1fr;padding:24px 20px;gap:12px}
-  .perks{grid-template-columns:1fr}
   .benefits-table{font-size:.82rem}
   .benefits-table th,.benefits-table td{padding:10px 8px}
   .benefits-table th[scope=row],.benefits-table thead th:first-child{padding-left:14px}
