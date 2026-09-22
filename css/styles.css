@@ -55,7 +55,7 @@ section{scroll-margin-top:106px}
 .bar{pointer-events:auto;display:flex;align-items:center;gap:16px;height:66px;max-width:1320px;margin:0 auto;padding:0 24px;border:1px solid transparent;border-radius:999px;transition:max-width .35s var(--ease),background-color .35s,border-color .35s,box-shadow .35s,padding .35s}
 .is-condensed .bar{max-width:980px;background:rgba(246,239,227,.84);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-color:var(--line);box-shadow:0 12px 36px -14px rgba(27,20,18,.3);padding:0 8px 0 18px}
 .brand{display:flex;align-items:center;gap:0;min-height:44px;text-decoration:none;color:var(--ink)}
-.brand img{height:54px;width:auto;margin-right:14px}
+.brand img{height:56px;width:auto;margin-right:14px}
 .brand .bbb{height:54px;width:54px;margin:0;border-radius:50%;box-shadow:0 0 0 2px rgba(246,239,227,.9)}
 .nav{margin:0 auto}
 .nav ul{display:flex;gap:2px;list-style:none;margin:0;padding:3px;border-radius:999px;background:var(--ivory);border:1px solid var(--line);box-shadow:0 8px 24px -16px rgba(27,20,18,.35);transition:background-color .35s,border-color .35s,box-shadow .35s}
@@ -273,7 +273,7 @@ address{font-style:normal;margin:0 0 12px;color:var(--ink-soft);line-height:1.55
 /* footer */
 .foot{padding:calc(var(--gap) + 24px) 0 28px}
 .foot-close{text-align:center;margin-bottom:72px}
-.foot-close img{width:min(260px,60vw);margin:0 auto;filter:drop-shadow(0 0 24px rgba(228,184,92,.35))}
+.foot-close img{width:min(420px,80vw);height:auto;margin:0 auto 8px;filter:drop-shadow(0 0 24px rgba(228,184,92,.35))}
 .closing{margin:24px 0 0;font:500 clamp(2.4rem,5vw,4.6rem)/1.05 var(--display);letter-spacing:-.015em;font-variation-settings:"opsz" 144}
 .foot-cols{display:grid;grid-template-columns:1.5fr .9fr 1.2fr;gap:32px;padding:44px 0;border-top:1px solid var(--line-e);border-bottom:1px solid var(--line-e)}
 .foot-cols p{margin:0;font-size:.95rem;line-height:1.6}
