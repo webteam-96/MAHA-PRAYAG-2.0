@@ -115,7 +115,7 @@ body.menu-open{overflow:hidden}
 .hero-glow{position:absolute;left:50%;bottom:6%;width:90%;aspect-ratio:1;transform:translateX(-50%);background:radial-gradient(circle,rgba(183,38,26,.55),rgba(183,38,26,0) 62%);animation:smoke-in 1.4s var(--ease) .2s both}
 .hero-hanuman{--tx:-50%;position:absolute;bottom:0;left:50%;height:85%;width:auto;max-width:none;animation:rise 1.1s var(--ease) .25s both}
 @keyframes rise{from{opacity:0;transform:translate(var(--tx),40px)}to{opacity:1;transform:translate(var(--tx),0)}}
-.hero-count{display:inline-block;margin-top:26px;padding:12px 18px;border-radius:14px;border:1px solid var(--line-e);background:rgba(18,6,6,.5);color:var(--cream);animation:smoke-in .8s var(--ease) 1s both}
+.hero-count{display:inline-block;align-self:flex-start;width:max-content;max-width:100%;margin-top:26px;padding:12px 18px;border-radius:14px;border:1px solid var(--line-e);background:rgba(18,6,6,.5);color:var(--cream);animation:smoke-in .8s var(--ease) 1s both}
 .hero-count .overline{display:block;color:var(--gold-l);margin-bottom:2px;font-size:.75rem}
 .count-row{font:500 1.05rem/1.3 var(--display);white-space:nowrap}
 @media (max-width:420px){.count-row{font-size:.92rem}}
@@ -242,7 +242,9 @@ body.menu-open{overflow:hidden}
 .sec-ember .sec-label{color:var(--gold-l)}
 .sec-ember .agenda time{color:var(--cream)}
 .sec-ember .wrap{position:relative;z-index:1}
-.reg-hanuman{display:none;grid-column:2;grid-row:1/span 12;align-self:end;justify-self:end;width:100%;max-width:none;height:auto;pointer-events:none;filter:drop-shadow(0 0 40px rgba(183,38,26,.35))}
+.reg-stage{display:flex;flex-direction:column;align-items:center;margin-top:48px}
+.reg-hanuman{display:none;width:min(100%,520px);height:auto;margin:0 auto -18px;position:relative;z-index:1;pointer-events:none;filter:drop-shadow(0 0 40px rgba(183,38,26,.35))}
+.reg-base{position:relative;width:100%;padding:0;border-radius:6px 6px 22px 22px;background:linear-gradient(180deg,#160505 0%,var(--black) 38%);border:1px solid var(--line-e);border-top:3px solid var(--gold);box-shadow:0 30px 80px -30px rgba(0,0,0,.9),inset 0 12px 24px -16px rgba(228,184,92,.35)}
 .deadlines{display:flex;flex-wrap:wrap;gap:10px 32px;margin:0 0 36px;padding:14px 26px;border:1px solid var(--line-e);border-radius:999px;width:fit-content;max-width:100%;background:rgba(42,11,11,.6)}
 .deadlines p{margin:0;display:flex;align-items:center;gap:10px;font-size:.95rem}
 .deadlines p[hidden]{display:none}
@@ -263,7 +265,7 @@ body.menu-open{overflow:hidden}
 .fields li::before{content:"";position:absolute;left:0;top:.72em;width:7px;height:7px;border-radius:50%;background:var(--gold)}
 .last{margin:0 0 22px;color:rgba(243,231,214,.85)}
 .last strong{color:#fff}
-.cct{display:flex;align-items:center;gap:20px;margin-top:48px;padding:22px 26px;border:1px solid var(--line-e);border-radius:18px;max-width:600px;background:rgba(42,11,11,.5)}
+.cct{display:flex;align-items:center;gap:20px;margin:0;padding:26px 28px;border:0;border-radius:0;background:transparent}
 .cct p{margin:0}
 .cct .overline{margin-bottom:4px}
 .kyt-badge{flex:0 0 76px;height:76px;border-radius:50%;border:2px solid var(--gold-l);display:grid;place-items:center;font:600 1.15rem/1 var(--display);letter-spacing:.06em;color:var(--gold-l);box-shadow:inset 0 0 0 5px var(--ember),inset 0 0 0 6px var(--line-e)}
@@ -340,10 +342,11 @@ address{font-style:normal;margin:0 0 12px;color:var(--ink-soft);line-height:1.55
   .wrap{padding-left:72px}
   .sec-label{position:absolute;left:max(24px,calc(50% - 636px));top:0;margin:0;width:max-content;transform:rotate(-90deg) translateX(-100%);transform-origin:0 0}
   .speaker:nth-child(even){margin-top:48px}
-  #register .wrap{display:grid;grid-template-columns:minmax(0,1fr) clamp(340px,24vw,460px);column-gap:40px}
-  #register .wrap>*{grid-column:1}
+  #register .wrap{display:grid;grid-template-columns:minmax(360px,1fr) minmax(0,1.5fr);column-gap:40px;align-items:end}
+  #register .wrap>*{grid-column:2}
   #register .wrap>.sec-label{grid-column:auto;grid-row:auto}
-  #register .wrap>.reg-hanuman{display:block;grid-column:2}
+  #register .wrap>.reg-stage{grid-column:1;grid-row:1/span 5;align-self:end;margin-top:0;margin-bottom:-12px}
+  #register .reg-hanuman{display:block}
   #register .passes{grid-template-columns:1fr 1fr;max-width:none}
   #register .pass .amount{font-size:2.3rem}
   #register .pass-price{white-space:nowrap}
