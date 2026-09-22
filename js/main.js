@@ -25,7 +25,7 @@
       const t = e.target;
       if (pending.has(t)) {
         // clip-path-hidden (wipe) targets always report ratio 0, so isIntersecting alone reveals them
-        if (e.isIntersecting && (e.intersectionRatio >= .2 || t.classList.contains('wipe') || t.classList.contains('draw') || e.boundingClientRect.height > innerHeight * .5)) show(t);
+        if (e.isIntersecting && (e.intersectionRatio >= .2 || t.classList.contains('wipe') || t.classList.contains('sweep') || e.boundingClientRect.height > innerHeight * .5)) show(t);
       } else if (t === hero) vis.hero = e.intersectionRatio >= .3;
       else if (t === reg) vis.reg = e.isIntersecting;
       else if (t === foot) vis.foot = e.isIntersecting;
