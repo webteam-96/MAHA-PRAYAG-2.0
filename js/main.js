@@ -113,7 +113,7 @@
 
   /* ---------- countdowns ---------- */
   const EVENT = Date.parse('2026-10-24T14:00:00+05:30');
-  const REG = Date.parse('2026-10-10T23:59:59+05:30');
+  const REG = Date.parse('2026-10-15T23:59:59+05:30');
   const DRAW = Date.parse('2026-09-30T23:59:59+05:30');
   const DAY = 864e5, IST = 198e5;
   const dayKey = t => Math.floor((t + IST) / DAY);

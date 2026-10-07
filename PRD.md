@@ -129,7 +129,7 @@ Single page, anchor-linked. Content per section is fixed; layouts below are the 
 - The page's second dark moment: ember background, smoke drift, `hanuman-glow.webp` faint at the far right edge.
 - Label "05 — Register". H2 "Reserve Your Seat". Lead: "Two ways to be part of Maha Prayag: as a delegate, or as a sponsor."
 - Two **pass-style cards** side by side (stacked on phone):
-  - **Delegate Pass** — ₹1,699 / per head · fields: Name, Mobile Number, Chapter, Top 2 preferences for KYT Conclave CCT · "Last date to register: 10th October 2026" · button "Register for Event".
+  - **Delegate Pass** — ₹1,699 / per head · fields: Name, Mobile Number, Chapter, Top 2 preferences for KYT Conclave CCT · "Last date to register: 15th October 2026" · button "Register for Event".
   - **Sponsor Entry** — Lucky draw entry · fields: Name, Mobile Number, Chapter, Type of Sponsorship · "Last date to enter: 30th September 2026" · button "Register Interest".
 - A **deadline countdown** strip above the cards: "Registration closes in 19 days" (computed to 10 Oct 2026 23:59 IST) and "Lucky draw closes in 9 days" (30 Sep 2026); each hides after its date.
 - "CCT for KYT Conclave" explainer slot: circular KYT badge, "The final CCT artwork will be added here."
@@ -155,7 +155,7 @@ Single page, anchor-linked. Content per section is fixed; layouts below are the 
 | Anchor navigation | `scroll-behavior: smooth`; `scroll-margin-top` on sections; active link underline moves via IntersectionObserver. |
 | Condensing nav | Adds `.is-condensed` after 80 px scroll; pill nav animates width/opacity with transforms only. |
 | Mobile menu | Button with `aria-expanded` and `aria-controls`; full-screen sheet; closes on link, Esc, outside tap; body scroll locked; focus returns to the button. |
-| Countdowns | Event: `2026-10-24T14:00:00+05:30`. Deadlines: `2026-10-10T23:59:59+05:30`, `2026-09-30T23:59:59+05:30`. Tick every second; hide when passed. |
+| Countdowns | Event: `2026-10-24T14:00:00+05:30`. Deadlines: `2026-10-15T23:59:59+05:30`, `2026-09-30T23:59:59+05:30`. Tick every second; hide when passed. |
 | Registration dialogs | Native `<dialog>`, labelled by heading; close on ✕, Esc, backdrop click. Each card carries `data-register-url` / `data-sponsor-url`; when non-empty the button becomes a direct link (new tab), otherwise the dialog shows "Registration link coming soon" / "Lucky-draw entry link coming soon" with fee and deadline. |
 | Sun-path timeline | Sun position = section scroll progress (0–1) mapped to arc length via a precomputed SVG path; markers gain `.is-past`. On phones the same progress drives a vertical rail. |
 | Highlights rail (phone) | CSS `scroll-snap-type: x mandatory`; no JS. |
