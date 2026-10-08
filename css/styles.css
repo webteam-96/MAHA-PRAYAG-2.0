@@ -261,7 +261,7 @@ body.menu-open{overflow:hidden}
 .deadlines p[hidden]{display:none}
 .deadlines strong{color:#fff}
 .dot{width:8px;height:8px;border-radius:50%;background:var(--vermilion-h);box-shadow:0 0 0 3px rgba(210,53,42,.28)}
-.passes{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:960px}
+.passes{display:grid;gap:24px;max-width:460px}
 .pass{position:relative;background:var(--ember-2);border:1px solid var(--line-e);border-radius:18px}
 .pass-head{position:relative;padding:28px 32px 24px;border-bottom:2px dashed var(--line-e)}
 .pass-head::before,.pass-head::after{content:"";position:absolute;bottom:-13px;width:24px;height:24px;border-radius:50%;background:var(--ember);border:1px solid var(--line-e)}
@@ -352,7 +352,6 @@ address{font-style:normal;margin:0 0 12px;color:var(--ink-soft);line-height:1.55
   #register .wrap>*{grid-column:2}
   #register .wrap>.sec-label{grid-column:auto;grid-row:auto}
   #register .wrap>.reg-stage{grid-column:1;grid-row:1/span 4;align-self:end;margin-top:0}
-  #register .passes{grid-template-columns:1fr 1fr;max-width:none}
   #register .pass .amount{font-size:2.3rem}
   #register .pass-price{white-space:nowrap}
 }
@@ -405,7 +404,6 @@ address{font-style:normal;margin:0 0 12px;color:var(--ink-soft);line-height:1.55
   .ticket-stub::before,.ticket-stub::after{top:-14px;bottom:auto}
   .ticket-stub::before{left:-14px}.ticket-stub::after{left:auto;right:-14px}
   .sunpath{aspect-ratio:auto;margin:8px 0 0}
-  .passes{grid-template-columns:1fr}
   .venue-map{height:auto}
   .map{position:relative;display:block;height:380px}
   .venue-card{position:relative;left:auto;right:auto;top:auto;transform:none;width:auto;margin:-40px var(--gutter) 0}

@@ -114,7 +114,6 @@
   /* ---------- countdowns ---------- */
   const EVENT = Date.parse('2026-10-24T14:00:00+05:30');
   const REG = Date.parse('2026-10-15T23:59:59+05:30');
-  const DRAW = Date.parse('2026-09-30T23:59:59+05:30');
   const DAY = 864e5, IST = 198e5;
   const dayKey = t => Math.floor((t + IST) / DAY);
   const pad = n => String(n).padStart(2, '0');
@@ -143,7 +142,6 @@
     } else if (dayKey(now) === dayKey(EVENT)) { row.textContent = 'Today'; count.hidden = false; }
     else count.hidden = true;
     deadline($('#dl-reg'), REG, 'Registration closes');
-    deadline($('#dl-draw'), DRAW, 'Lucky draw closes');
   }
   tick();
   setInterval(tick, 1000);
@@ -151,8 +149,8 @@
   /* ---------- dialogs / direct links ---------- */
   let opener = null;
   $$('[data-open]').forEach(b => {
-    const holder = b.closest('[data-register-url],[data-sponsor-url]');
-    const url = holder && (holder.dataset.registerUrl || holder.dataset.sponsorUrl);
+    const holder = b.closest('[data-register-url]');
+    const url = holder && holder.dataset.registerUrl;
     if (url) {
       const a = doc.createElement('a');
       a.className = b.className; a.href = url; a.target = '_blank'; a.rel = 'noopener';
